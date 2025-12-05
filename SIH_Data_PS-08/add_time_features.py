@@ -11,8 +11,8 @@ FEATURE_ENGINEERING_DIR = BASE_DIR / "feature_engineering_data"
 FEATURE_ENGINEERING_DIR.mkdir(exist_ok=True)
 
 DATASETS = {
-    "MEO": (INPUT_DIR / "MEO_scaled.csv", FEATURE_ENGINEERING_DIR / "MEO_time_features.csv"),
-    "GEO": (INPUT_DIR / "GEO_scaled.csv", FEATURE_ENGINEERING_DIR / "GEO_time_features.csv"),
+    "MEO": (INPUT_DIR / "MEO_smoothed.csv", FEATURE_ENGINEERING_DIR / "MEO_time_features.csv"),
+    "GEO": (INPUT_DIR / "GEO_smoothed.csv", FEATURE_ENGINEERING_DIR / "GEO_time_features.csv"),
 }
 NEW_FEATURES = [
     "hour",

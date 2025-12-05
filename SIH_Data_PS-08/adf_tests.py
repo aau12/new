@@ -8,11 +8,11 @@ from statsmodels.tsa.stattools import adfuller
 INPUT_DIR = Path(__file__).resolve().parent / "15min_resampled"
 DATASETS = {
     "MEO": (
-        INPUT_DIR / "MEO_scaled.csv",
+        INPUT_DIR / "MEO_smoothed.csv",
         INPUT_DIR / "ADF_MEO_results.csv",
     ),
     "GEO": (
-        INPUT_DIR / "GEO_scaled.csv",
+        INPUT_DIR / "GEO_smoothed.csv",
         INPUT_DIR / "ADF_GEO_results.csv",
     ),
 }
